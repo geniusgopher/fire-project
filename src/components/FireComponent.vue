@@ -16,16 +16,16 @@
           <br>
           {{ fireObj.oilWellNumber }}
         </p>
-        <p class="fire-block__body__field">
+        <p v-show="fireObj.status.isBurn == 0" class="fire-block__body__field">
           <span>Status:</span>
           <br>
-          {{ fireObj.status.status }} {{ fireObj.status.lastRecordDate | PRETTY_DATE }}
+          {{ fireObj.status.status }} {{ fireObj.status.notBurnSince | PRETTY_DATE }}
         </p>
-        <!-- <p class="fire-block__body__field">
+        <p class="fire-block__body__field">
           <span>lastRecordDate:</span>
           <br>
           {{ fireObj.status.lastRecordDate | PRETTY_DATE }}
-        </p> -->
+        </p>
         <!-- <p class="fire-block__body__field">
           <span>notBurnSince:</span>
           <br>
