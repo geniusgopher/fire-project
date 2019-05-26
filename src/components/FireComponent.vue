@@ -16,7 +16,7 @@
           <br>
           {{ fireObj.oilWellNumber }}
         </p>
-        <p v-show="fireObj.status.isBurn == 0" class="fire-block__body__field">
+        <p class="fire-block__body__field">
           <span>Status:</span>
           <br>
           {{ fireObj.status.status }} {{ fireObj.status.notBurnSince | PRETTY_DATE }}
@@ -42,7 +42,7 @@ export default {
   filters: {
     PRETTY_DATE(date) {
       if (!date) {
-        return "-- / --";
+        return '';
       }
       let options = {
         year: "numeric",
