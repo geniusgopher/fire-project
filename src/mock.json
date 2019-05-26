@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "observerNumber": 1,
+      "oilWellNumber": 123,
+      "status": {
+        "status": "Не горит",
+        "isBurn": 0, 
+        "lastRecordDate": "2017-03-16T00:00:00.000+0000", 
+        "notBurnSince": "2017-02-16T00:00:00.000+0000"
+      }
+    },
+    {
+      "id": 2,
+      "observerNumber": 2,
+      "oilWellNumber": 234,
+      "status": {
+        "status": "Горит",
+        "isBurn": 1,
+        "lastRecordDate": "2017-03-16T00:00:00.000+0000",
+        "notBurnSince": null
+      }
+    },
+    {
+      "id": 3,
+      "observerNumber": 3, 
+      "oilWellNumber": 345, 
+      "status": {
+        "status": "Данные устарели",
+        "isBurn": -1,
+        "lastRecordDate": "2014-03-16T00:00:00.000+0000",
+        "notBurnSince": null
+      }
+    }
+  ]
